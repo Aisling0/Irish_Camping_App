@@ -10,4 +10,3 @@ def get_index(request):
 def about(request):
 
     return render(request, "about.html")
-
