@@ -21,12 +21,12 @@ def threads(request, subject_id):
 
 
 def save_thread(thread_form, post_form, subject, user):
-    thread = thread_form.save(commit=True)
+    thread = thread_form.save(commit=False)
     thread.subject = subject
     thread.user = user
     thread.save()
 
-    post = post_form.save(commit=True)
+    post = post_form.save(commit=False)
     post.user = user
     post.thread = thread
     post.save()
@@ -34,12 +34,12 @@ def save_thread(thread_form, post_form, subject, user):
 
 
 def save_poll(poll_form, poll_subject_formset, thread):
-    poll = poll_form.save(commit=True)
+    poll = poll_form.save(commit=False)
     poll.thread = thread
     poll.save()
 
     for subject_form in poll_subject_formset:
-        subject = subject_form.save(commit=True)
+        subject = subject_form.save(commit=False)
         subject.poll = poll
         subject.save()
 
@@ -58,22 +58,22 @@ def new_thread(request, subject_id):
                     post_form.is_valid() and
                     poll_form.is_valid() and
                     poll_subject_formset.is_valid()):
-                thread = thread_form.save(True)
+                thread = thread_form.save(False)
                 thread.subject = subject
                 thread.user = request.user
                 thread.save()
 
-                post = post_form.save(True)
+                post = post_form.save(False)
                 post.user = request.user
                 post.thread = thread
                 post.save()
 
-                poll = poll_form.save(True)
+                poll = poll_form.save(False)
                 poll.thread = thread
                 poll.save()
 
                 for subject_form in poll_subject_formset:
-                    subject = subject_form.save(True)
+                    subject = subject_form.save(False)
                     subject.poll = poll
                     subject.save()
 
@@ -81,12 +81,12 @@ def new_thread(request, subject_id):
                 return redirect(reverse('thread', args={thread.pk}))
         else:
             if thread_form.is_valid() and post_form.is_valid():
-                thread = thread_form.save(True)
+                thread = thread_form.save(False)
                 thread.subject = subject
                 thread.user = request.user
                 thread.save()
 
-                post = post_form.save(True)
+                post = post_form.save(False)
                 post.user = request.user
                 post.thread = thread
                 post.save()
@@ -125,7 +125,7 @@ def new_post(request, thread_id):
     if request.method == "POST":
         form = PostForm(request.POST)
         if form.is_valid():
-            post = form.save(True)
+            post = form.save(False)
             post.thread = thread
             post.user = request.user
             post.save()
@@ -202,3 +202,4 @@ def thread_vote(request, thread_id, subject_id):
     messages.success(request, "We've registered your vote!")
 
     return redirect(reverse('thread', args={thread_id}))
+

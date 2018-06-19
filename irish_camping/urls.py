@@ -21,7 +21,7 @@ from threads import views as forum_views
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^$', home_views.get_index, name='index'),
 
     url(r'^register/$', accounts_views.register, name='register'),
