@@ -50,6 +50,8 @@ urlpatterns = [
         forum_views.thread_vote, name='cast_vote'),
 
 ]
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns.append(url(r'^debug/', include(debug_toolbar.urls)))
+
+# if settings.DEBUG:
+#    import debug_toolbar
+#    urlpatterns.append(url(r'^debug/', include(debug_toolbar.urls)))
+#   ]+urlpatterns
