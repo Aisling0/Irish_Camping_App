@@ -19,8 +19,8 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_IwUXtl7a8TYJdu9S4a
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_mLeYQydSoe76bOTxhd4dCIYM')
 
 
-SITE_URL = 'https://irish_camping.herokuapp.com'
-ALLOWED_HOSTS.append('irish_camping.herokuapp.com')
+SITE_URL = 'https://irish-camping.herokuapp.com'
+ALLOWED_HOSTS.append('irish-camping.herokuapp.com')
 
 
 # Log DEBUG information to the console

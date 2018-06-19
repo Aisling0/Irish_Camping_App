@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^7p39$sjbz$sv$5_45a%bh4l6*#_ktwxatk4#9bq1del37!&0u'
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'irish_camping.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'irish-camping.herokuapp.com']
 SITE_ID = 2
 INTERNAL_IPS = ('127.0.0.1',)
 
