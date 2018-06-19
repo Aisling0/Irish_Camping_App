@@ -1,0 +1,42 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$1o8mRIL9Gtkp$fonkOy4b4l+ya/qW5YbXsN/yGAFlhr+E9COhBf+PueQ=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "aisling1odonovan@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "aisling1odonovan@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-06-18T19:56:09.302Z",
+        "stripe_id": "",
+        "subscription_end": "2018-06-18T19:56:09.303Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$sLh0WHZcsvlp$l6GQuGqsYwbUwSXnLWoUtHwAqiFhPt1vDNpFV5x9j38=",
+        "last_login": "2018-06-18T21:53:24.480Z",
+        "is_superuser": false,
+        "username": "eoink82@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "eoink82@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-06-18T21:53:21.954Z",
+        "stripe_id": "tok_1CeVHrDYVUKSjWSAv5IeIo8i",
+        "subscription_end": "2018-06-18T21:53:21.954Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
