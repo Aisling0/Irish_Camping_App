@@ -17,7 +17,7 @@
 <div class="container">
    <div class="masthead">
        <ul class="nav nav-pills pull-right">
-           <li><a href="/">Home</a></li>
+           <li><a class="navbar-brand" href="{% url 'index' %}">Irish Camping App</a></li>
            <li><a href="{% url 'about' %}">About</a></li>
            <li><a href="{% url 'forum' %}">Forum</a></li>
             {% if user.is_authenticated %}
@@ -28,7 +28,6 @@
                 <li><a href="{% url 'login' %}">Log In</a></li>
             {% endif %}
         </ul>
-       <h1><span class="fui-settings-16 muted">Irish Camping App</span></h1>
    </div>
    <hr>
     {% if messages %}
