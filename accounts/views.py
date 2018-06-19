@@ -93,4 +93,4 @@ def login(request):
 def logout(request):
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
-    return render(request, '../home/templates/index.html')
+    return render(request, '../home/templates/../templates/index.html')

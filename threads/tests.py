@@ -13,7 +13,7 @@ class HomePageTest(TestCase):
     def test_check_content_is_correct(self):
         home_page = self.client.get('/')
         self.assertTemplateUsed(home_page, "index.html")
-        home_page_template_output = render_to_response("../home/templates/index.html").content
+        home_page_template_output = render_to_response("../home/templates/../templates/index.html").content
         self.assertEqual(home_page.content, home_page_template_output)
 
 
