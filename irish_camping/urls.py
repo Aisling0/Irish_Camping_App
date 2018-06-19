@@ -30,7 +30,6 @@ urlpatterns = [
     url(r'^logout/$', accounts_views.logout, name='logout'),
     url(r'^pages/', include('django.contrib.flatpages.urls')),
 
-
     # Forum URLs
     url(r'^forum/$', forum_views.forum, name='forum'),
     url(r'^threads/(?P<subject_id>\d+)/$',
