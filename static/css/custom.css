@@ -1,7 +1,12 @@
 .navbar-brand {
-    float: left;
+    font-size: 20px;
 }
 .container-fluid {
     width: 100%;
-    margin-left: 15px;
+    margin: 15px;
+    height: 80px;
+    background-color: darkcyan;
+}
+.navtab :active{
+    background-color: #31708f;
 }
