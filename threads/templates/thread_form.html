@@ -15,7 +15,8 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
          <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'forum' %}">Forum</a></li>
-        <li class="breadcrumb-item active">{{ subject.name }}</li>
+        <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'thread' %}">{{ subject.name }}</a></li>
+        <li class="breadcrumb-item active">New Thread</li>
     </ol>
    <section>
        <div class="col-md-9">
