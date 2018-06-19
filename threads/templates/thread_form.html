@@ -16,11 +16,10 @@
        <div class="col-md-9">
            <form method="post" action="{% url 'new_thread' subject.id %}">
                {% csrf_token %}
-               <div class="form-group">poll_form = PollForm(request.POST)
                    {{ thread_form | as_bootstrap }}
                    <hr>
                    {{ post_form | as_bootstrap }}
-               </div>
+      
                <div id="poll_form" class="form-group">
                    {{ poll_form|as_bootstrap }}
                    {{ poll_subject_formset.management_form }}
