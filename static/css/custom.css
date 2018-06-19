@@ -21,3 +21,11 @@
         rgba(255, 255, 255, 0) 100%);
     border: none;
 }
+.breadcrumbtab {
+	color: #4197b3;
+}
+.breadcrumbtab:hover,
+.breadcrumbtab:focus{
+	color: #16323c;
+	text-decoration: none;
+}
