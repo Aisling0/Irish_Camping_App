@@ -12,6 +12,11 @@
 
 
 {% block content %}
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
+         <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'forum' %}">Forum</a></li>
+        <li class="breadcrumb-item active">{{ subject.name }}</li>
+    </ol>
    <section>
        <div class="col-md-9">
            <form method="post" action="{% url 'new_thread' subject.id %}">
