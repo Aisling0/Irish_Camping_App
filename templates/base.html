@@ -17,10 +17,9 @@
 <div class="container">
    <div class="masthead">
        <ul class="nav nav-pills pull-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="{% url 'forum' %}">Forum</a></li>
-            <li><a href="/pages/about/">About</a></li>
-            <li><a href="/blog/">Our Blog</a></li>
+           <li><a href="/">Home</a></li>
+           <li><a href="{% url 'about' %}">About</a></li>
+           <li><a href="{% url 'forum' %}">Forum</a></li>
             {% if user.is_authenticated %}
                 <li><a href="{% url 'profile' %}">Profile</a></li>
                 <li><a href="{% url 'logout' %}">Log Out</a></li>
@@ -48,9 +47,14 @@
        {% endblock %}
    </div>
    <hr>
-   <div class="footer">
-
-   </div>
+   <footer>
+       <div>
+           <a href="" target=_blank><i class="fa fa-twitter" aria-hidden="true"></i></a>
+           <a href="" target=_blank><i class="fa fa-facebook" aria-hidden="true"></i></a>
+           <a href="" target=_blank><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+           <a href="" target=_blank><i class="fa fa-github" aria-hidden="true"></i></a>
+       </div>
+   </footer>
 </div>
 </body>
  
