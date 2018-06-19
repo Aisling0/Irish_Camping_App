@@ -23,8 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^7p39$sjbz$sv$5_45a%bh4l6*#_ktwxatk4#9bq1del37!&0u'
 
 
-ALLOWED_HOSTS = ['irish_camping.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'irish_camping.herokuapp.com']
 SITE_ID = 2
+INTERNAL_IPS = ('127.0.0.1',)
 
 # Application definition
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'django_forms_bootstrap',
     'tinymce',
+    'rest_framework'
     'emoticons',
     'disqus',
     'home',
@@ -90,31 +92,22 @@ TEMPLATES = [
 WSGI_APPLICATION = 'irish_camping.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    {'NAME': 'django.contrib.auth.password_validation.%s' % validator}
+    for validator in [
+        'UserAttributeSimilarityValidator',
+        'MinimumLengthValidator',
+        'CommonPasswordValidator',
+        'NumericPasswordValidator',
+    ]
 ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 

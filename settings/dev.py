@@ -7,6 +7,8 @@ DEBUG = True
 
 INSTALLED_APPS.append('debug_toolbar')
 
+MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
