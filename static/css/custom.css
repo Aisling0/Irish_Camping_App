@@ -1,4 +1,6 @@
 .navbar-brand {
     float: left;
-
+}
+.container-fluid {
+    width: 100%;
 }
