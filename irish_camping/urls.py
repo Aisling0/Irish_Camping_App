@@ -23,6 +23,7 @@ from threads import views as forum_views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', home_views.get_index, name='index'),
+    url(r'^about/$', home_views.about, name='about'),
 
     url(r'^register/$', accounts_views.register, name='register'),
     url(r'^profile/$', accounts_views.profile, name='profile'),
