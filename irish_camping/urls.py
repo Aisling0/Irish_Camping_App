@@ -19,6 +19,7 @@ from accounts import views as accounts_views
 from home import views as home_views
 from threads import views as forum_views
 from django.views import static
+from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -47,7 +48,7 @@ urlpatterns = [
         forum_views.delete_post, name='delete_post'),
     url(r'^thread/vote/(?P<thread_id>\d+)/(?P<subject_id>\d+)/$',
         forum_views.thread_vote, name='cast_vote'),
-    url(r'^media/(?P<path>.*)$',static.serve,{'document_root': MEDIA_ROOT}),
+    url(r'^media/(?P<path>.*)$',static.serve,{'document_root': settings.MEDIA_ROOT}),
 
 ]
 
