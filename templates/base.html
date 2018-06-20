@@ -33,18 +33,16 @@
                </ul>
                <ul class="nav navbar-nav navbar-right">
                    {% if user.is_authenticated %}
-                       <li class="navtab"><a href="{% url 'profile' %}"><i class="fas fa-user-circle"></i> Profile</a></li>
-                       <li class="navtab"><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                       <li class="navtab"><a href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                       <li class="navtab"><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
                    {% else %}
-                       <li class="navtab"><a href="{% url 'register' %}"><i class="far fa-user-circle"></i> Sign Up</a></li>
-                       <li class="navtab"><a href="{% url 'login' %}"><i class="fas fa-user-circle"></i> Login</a></li>
+                       <li class="navtab"><a href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                       <li class="navtab"><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                    {% endif %}
                </ul>
            </div>
        </nav>
    </div>
-   <a class="footericon" href="" target=_blank><i class="fa fa-twitter" aria-hidden="true"></i></a>
-
    <hr>
    <div class="container">
     {% if messages %}
