@@ -18,6 +18,7 @@ from django.conf.urls import include, url
 from accounts import views as accounts_views
 from home import views as home_views
 from threads import views as forum_views
+from django.views.static import serve
 
 
 urlpatterns = [
