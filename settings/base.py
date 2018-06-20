@@ -121,6 +121,13 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),  # static directory at the project level
 )
 
+MEDIA_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+
+MEDIAFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),  # static directory at the project level
+)
+
 # tinymce settings
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
 
