@@ -48,14 +48,14 @@
 }
 .forumstats {
     position: absolute;
-    bottom: 2px;
+    vertical-align: bottom;
 }
 th, td {
     padding-right: 10px;
 }
 footer {
     position:relative;
-    vertical-align: baseline;
+    bottom:0;
 }
 .card {
     min-height: 150px;
