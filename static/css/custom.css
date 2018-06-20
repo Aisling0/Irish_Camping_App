@@ -48,7 +48,7 @@
 }
 .forumstats {
     position: absolute;
-    vertical-align: bottom;
+    vertical-align: baseline;
 }
 th, td {
     padding-right: 10px;
