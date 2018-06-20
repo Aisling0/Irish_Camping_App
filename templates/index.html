@@ -64,15 +64,45 @@
             <div>Welcome! </div>
         </div>
     </section>
-    <section>
 
-        <div class="cards">
-            <div>
-                <h3></h3>
-                <p></p>
-                <a class="btn btn-block" href="{% url 'forum' %} >Go
+
+         <!-- Page Content -->
+    <div class="container">
+        <h1></h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <h4 class="card-header">Our Forum</h4>
+                    <div class="card-block">
+                        <p class="card-text">Browse out forum for free or simply register if you'd like to contribute.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{% url 'forum' %}" class="btn btn-success">Browse the forum</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <h4 class="card-header">How does it work?</h4>
+                    <div class="card-block">
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{% url 'about' %}" class="btn btn-success"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <h4 class="card-header">Looking for gear or simply need some tips of advice?</h4>
+                    <div class="card-block">
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{% url "new_thread" %}" class="btn btn-success">Post to the forum</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </section>
 {% endblock %}
