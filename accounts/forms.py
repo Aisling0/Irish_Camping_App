@@ -28,8 +28,8 @@ class UserRegistrationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['email', 'password1', 'password2', 'stripe_id']
-        exclude = ['username']
+        fields = ['username', 'email', 'password1', 'password2', 'stripe_id']
+
 
     def clean_password2(self):
         password1 = self.cleaned_data.get('password1')
