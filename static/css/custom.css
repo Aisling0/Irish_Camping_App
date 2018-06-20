@@ -46,6 +46,10 @@
         rgba(255, 255, 255, 0.1) 75%,
         rgba(255, 255, 255, 0) 100%);
 }
+.forumstats {
+    position: absolute;
+    bottom: 2px;
+}
 th, td {
     padding-right: 10px;
 }
