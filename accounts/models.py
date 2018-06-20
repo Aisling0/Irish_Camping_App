@@ -41,3 +41,4 @@ class User(AbstractUser):
             return False
 
         return purchase.subscription_end > timezone.now()
+
