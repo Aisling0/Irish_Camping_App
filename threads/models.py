@@ -28,3 +28,4 @@ class Post(models.Model):
     comment = HTMLField(blank=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='posts')
     created_at = models.DateTimeField(default=timezone.now)
+    image = models.ImageField(upload_to="images", blank=True, null=True)

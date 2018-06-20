@@ -2,6 +2,10 @@
 {% load emoticons_tags %}
 <section class="row comment col-md-9">
     <div class="col-md-3 comment-profile">
+        {% if post.image %}
+            <img src="/media/{{ post.image}}">
+        {% endif %}
+
         <p>{{ post.user.username }}</p>
         <p>{{ post.user.posts.count }} POSTS</p>
     </div>
