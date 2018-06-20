@@ -20,7 +20,6 @@ from home import views as home_views
 from threads import views as forum_views
 from django.views import static
 
-
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', home_views.get_index, name='index'),
