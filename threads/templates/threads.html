@@ -7,8 +7,9 @@
         <li class="breadcrumb-item active">{{ subject.name }}</li>
     </ol>
     <div class="row header">
-        <div class="jumbotron">
+        <div class="jumbotron" >
             <h1>{{ subject.name }}</h1>
+            <p>{{ subject.description }}</p>
         </div>
         <div class="col-md-12">
             {% if user.is_authenticated %}
