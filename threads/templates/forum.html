@@ -6,7 +6,7 @@
         <li class="breadcrumb-item active">Forum</li>
     </ol>
 {% load bootstrap_tags %}
-      {% for subject in subjects %}
+
         <section class="col-lg-12">
             <div  class="jumbotron">
                 <table>
@@ -16,7 +16,7 @@
                         <th>Threads</th>
                         <th>Posts</th>
                     </tr>
-                    <tr>
+                    <tr> {% for subject in subjects %}
                         <td><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></td>
                         <td><a>
                             {% autoescape off %}
