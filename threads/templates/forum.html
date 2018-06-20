@@ -8,7 +8,7 @@
 {% load bootstrap_tags %}
       {% for subject in subjects %}
         <section class="subject col-lg-4">
-            <div class="jumbotron">
+            <div id="subjectbox" class="jumbotron">
                 <h2><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h2>
                 <p>
                     <a href="{% url 'threads' subject.id %}">
