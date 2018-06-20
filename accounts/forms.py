@@ -5,8 +5,8 @@ from accounts.models import User
 
 class UserRegistrationForm(UserCreationForm):
     MONTH_ABBREVIATIONS = [
-        'Jan', 'Feb', 'Mar', 'Apr', 'May', 'June',
-        'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'
+
+        'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'June',
     ]
     MONTH_CHOICES = list(enumerate(MONTH_ABBREVIATIONS, 1))
     YEAR_CHOICES = [(i, i) for i in range(2018, 2038)]
@@ -28,8 +28,8 @@ class UserRegistrationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['email', 'password1', 'password2', 'stripe_id']
-        exclude = ['username']
+        fields = ['username', 'email', 'password1', 'password2', 'stripe_id']
+
 
     def clean_password2(self):
         password1 = self.cleaned_data.get('password1')
