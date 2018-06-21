@@ -35,7 +35,7 @@
 
             {% if thread.poll %}
                <div class="container">
-                   <div class="col-md-6">
+                   <div class="pollBox">
                        <h2>Poll</h2>
                        <strong>{{ thread.poll.question }}</strong><br><br>
                        {% for subject in thread.poll.subjects.all %}

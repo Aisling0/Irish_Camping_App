@@ -55,13 +55,13 @@ btn:hover {
     width: 100%;
     min-height: 100px;
     padding: 5px;
-    background-color: #3A3A3A;
 }
 .details {
     margin:10px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: #595959 solid 1px;
 }
 .comment-content {
     align-self:baseline;
