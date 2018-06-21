@@ -2,6 +2,7 @@
 {% load thread_extras %}
 {% block content %}
     <div class="container">
+        <h1></h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
             <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'forum' %}">Forum</a></li>
@@ -18,23 +19,12 @@
                     <a href="{% url 'new_thread' subject.id %}" class="btn btn-primary">New Thread</a>
                 </p>
             {% endif %}
-            <div>
-                 <table class="table table-striped">
-                     <thead>
-                     <tr>
-                         <th>Thread</th>
-                         <th>Posts</th>
-                     </tr>
-                     </thead>
-                     <tr>{% for thread in subject.threads.all %}
-                         {% include "thread_item.html" %}
-                         <td>
-                             <a href="{% url 'thread' thread.id %}">{{ thread.name }}</a>
-                         </td>
-                         <td>{{ subject|get_total_subject_posts }}</td>
-                         </tr>{% endfor %}
-                 </table>
-             </div>
+            {% for thread in subject.threads.all %}
+                {% include "thread_item.html" %}
+                {% for get_total_subject_posts in subjects %}
+
+                {% endfor %}
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
