@@ -1,9 +1,8 @@
 .navbar-brand {
     font-size: 20px;
 }
-.postBox,
+#postBox,
 #comment-box,
-.comment-content,
 .container-fluid,
 .jumbotron {
     box-shadow: 0 5px 10px rgba(22, 50, 60, 0.5);
@@ -51,6 +50,7 @@
     width: 100%;
     min-height: 100px;
     padding: 5px;
+    background-color: #3A3A3A;
 }
 .details {
     margin:10px;
