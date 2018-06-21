@@ -7,24 +7,23 @@
     box-shadow: 0 5px 10px rgba(22, 50, 60, 0.5);
 }
 .navbar {
-      margin-bottom: 0;
-      border: 0;
-      font-size: 11px !important;
-      letter-spacing: 4px;
-      opacity: 0.9;
-  }
-.navbar-nav li.active a,
-.navbar-nav li a:hover,
-.open .dropdown-toggle,
-.dropdown-menu{
-      background-color: #4197b3 !important;
-  }
+    margin-bottom: 0;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
-footer,
+.dropdown-menu,
+.navbar-nav li.active a,
+.navbar-nav li a:hover,
+.open .dropdown-toggle{
+    background-color: #4197b3 !important;
+}
 .container-fluid,
-.dropnavBtn {
+footer{
     background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
 }
 .breadcrumbtab {
