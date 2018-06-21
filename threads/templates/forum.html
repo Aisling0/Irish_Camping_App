@@ -12,15 +12,15 @@
                <table class="table table-bordered">
                    <tbody>
                     <tr>
-                        <td><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></td>
-                        <td><a>
+                        <td id="tableTitle"><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></td>
+                        <td id="tableDes"><a>
                             {% autoescape off %}
                                 {{ subject.description }}
                             {% endautoescape %}
                         </a>
                         </td>
-                        <td><p>{{ subject.threads.count }}</p></td>
-                        <td><p>{{ subject|get_total_subject_posts }}</p></td>
+                        <td class="tableTotal"><p>{{ subject.threads.count }}</p></td>
+                        <td class="tableTotal"><p>{{ subject|get_total_subject_posts }}</p></td>
                     </tr>
                  </tbody>
                 </table>

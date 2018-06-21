@@ -46,4 +46,13 @@
 th, td {
     padding-right: 10px;
 }
+.tableTitle {
+    width: 30%;
+}
+.tableDes {
+    width: 50%;
+}
+.tableTotal {
+    width: 10%;
+}
 
