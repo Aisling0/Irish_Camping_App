@@ -11,8 +11,8 @@
     "model": "sites.site",
     "pk": 1,
     "fields": {
-        "domain": "localhost",
-        "name": "localhost"
+        "domain": "example.com",
+        "name": "example.com"
     }
 },
 {
