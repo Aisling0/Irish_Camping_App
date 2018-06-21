@@ -48,7 +48,7 @@
                            {% user_vote_button thread subject user %}
                            {% endautoescape %}
 
-                        <div class="col-md-8">
+                        <div class="">
                          <div class="progress">
                            <div class="progress-bar progress-bar-info" role="progressbar" aria-value="{{ subject|vote_percentage }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ subject|vote_percentage }}%;"></div>
                          </div>
