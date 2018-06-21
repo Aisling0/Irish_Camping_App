@@ -2,21 +2,20 @@
     font-size: 20px;
     margin-right: 15px;
 }
-.navbar-inverse,
+.container-fluid,
 .jumbotron {
     box-shadow: 0 5px 10px rgba(22, 50, 60, 0.5);
 }
-.navbar-inverse {
+.container-fluid {
     width: 100%;
     height: 60px;
     padding-right: 15px;
     padding-left: 15px;
-
     background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
     border:none;
 }
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
     background: linear-gradient(
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0.1) 25%,
