@@ -16,12 +16,12 @@
 button,
 .navBtn:hover,
 .navBtn:focus {
-    background: linear-gradient(
+    background-image: linear-gradient(
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0.1) 25%,
         rgba(255, 255, 255, 0.2) 50%,
         rgba(255, 255, 255, 0.1) 75%,
-        rgba(255, 255, 255, 0) 100%);
+        rgba(255, 255, 255, 0) 100%) !important;
     border: none;
 }
 button:hover{

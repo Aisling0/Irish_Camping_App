@@ -32,18 +32,18 @@
                </div>
                <div class="collapse navbar-collapse" id="myNavbar">
                    <ul class="nav navbar-nav navbar-right">
-                       <li><a class="navBtn" href="{% url 'about' %}">About</a></li>
-                       <li><a class="navBtn" href="{% url 'forum' %}">Forum</a></li>
-                       <li><a class="navBtn" href="{% url 'contact' %}">Contact Us</a></li>
+                       <li class="navBtn"><a  href="{% url 'about' %}">About</a></li>
+                       <li class="navBtn"><a  href="{% url 'forum' %}">Forum</a></li>
+                       <li class="navBtn"><a  href="{% url 'contact' %}">Contact Us</a></li>
                        <li class="dropdown">
                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account<span class="caret"></span></a>
                            <ul class="dropdown-menu">
                                {% if user.is_authenticated %}
-                                   <li><a class="dropnavBtn" href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                                   <li><a class="dropnavBtn" href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+                                   <li class="dropnavBtn"><a href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                                   <li class="dropnavBtn"><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
                                {% else %}
-                                   <li><a class="dropnavBtn" href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                   <li><a class="dropnavBtn" href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                   <li class="dropnavBtn"><a href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                   <li class="dropnavBtn"><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                                {% endif %}
                            </ul>
                        </li>
