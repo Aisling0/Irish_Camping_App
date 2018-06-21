@@ -3,9 +3,10 @@
         <table>
             <tr>
                 <td>
-                    <a href="{% url 'thread' thread.id %}"><h4>{{ thread.name }}</h4></a>
+                    <a href="{% url 'thread' thread.id %}">
+                        <h4>{{ thread.name }}</h4>
+                    </a>
                 </td>
-                <td><h5>{{ subject|get_total_subject_posts }}</h5></td>
             </tr>
         </table>
     </header>
