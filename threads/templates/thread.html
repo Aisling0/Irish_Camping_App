@@ -24,6 +24,7 @@
                    <tr>
                        <td>
                            <time datetime="{{ thread.created_at }}">
+                               {{ thread.created_at|started_time }}
                            </time>
                        </td>
                        <td>{{ thread.user.username }}</td>
