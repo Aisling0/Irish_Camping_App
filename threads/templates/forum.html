@@ -8,16 +8,19 @@
 {% load bootstrap_tags %}
       {% for subject in subjects %}
         <section class="col-lg-12">
-            <div >
-                <table>
-                    <tr>
+            <div class="container">
+               <table class="table table-bordered">
+                   <thead>
+                   <tr>
                         <th>Topics</th>
                         <th>Description</th>
                         <th>Threads</th>
                         <th>Posts</th>
                     </tr>
+                   </thead>
+                   <tbody>
                     <tr>
-                        <td><h3><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h3></td>
+                        <td><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></td>
                         <td><a>
                             {% autoescape off %}
                                 {{ subject.description }}
@@ -27,6 +30,7 @@
                         <td><p>{{ subject.threads.count }}</p></td>
                         <td><p>{{ subject|get_total_subject_posts }}</p></td>
                     </tr>
+                 </tbody>
                 </table>
             </div>
         </section>
