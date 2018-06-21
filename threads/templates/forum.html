@@ -17,25 +17,23 @@
                         <th>Posts</th>
                     </tr>
                 </thead>
-                <tbody>
                 {% for subject in subjects %}
-                    <tr>
-                        <td><h3><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h3></td>
-                        <td>
-                            <a>
-                                {% autoescape off %}
-                                    {{ subject.description }}
-                                {% endautoescape %}
-                            </a>
-                        </td>
-                        <td>
-                            <p>{{ subject.threads.count }}</p>
-                        </td>
-                        <td>
-                            <p>{{ subject|get_total_subject_posts }}</p>
-                        </td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <td><h3><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h3></td>
+                    <td>
+                        <a>
+                            {% autoescape off %}
+                                {{ subject.description }}
+                            {% endautoescape %}
+                        </a>
+                    </td>
+                    <td>
+                        <p>{{ subject.threads.count }}</p>
+                    </td>
+                    <td>
+                        <p>{{ subject|get_total_subject_posts }}</p>
+                    </td>
+                </tr>
             </table>
         </div>
     </section>

@@ -35,7 +35,6 @@
                        <li class="navBtn"><a  href="{% url 'about' %}">About</a></li>
                        <li class="navBtn"><a  href="{% url 'forum' %}">Forum</a></li>
                        <li class="navBtn"><a  href="{% url 'contact' %}">Contact Us</a></li>
-                       <li class="navBtn"><a  href="{% url 'contact' %}">Contact Us</a></li>
                        {% if user.is_authenticated %}
                        <li class="navBtn"><a  href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
                        <li class="navBtn"><a  href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
