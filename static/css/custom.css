@@ -26,10 +26,12 @@
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
-.btn,
 .container-fluid,
 .progress-bar{
     background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
+}
+.btn {
+    background-image: linear-gradient(#41b38f, #36947d, #2b6375, #2b7563, #163c33);
 }
 btn:hover {
 
