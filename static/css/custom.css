@@ -1,6 +1,9 @@
 .navbar-brand {
     font-size: 20px;
 }
+.postBox,
+#comment-box,
+.comment-content,
 .container-fluid,
 .jumbotron {
     box-shadow: 0 5px 10px rgba(22, 50, 60, 0.5);
@@ -47,7 +50,6 @@
 #comment-box {
     width: 100%;
     min-height: 100px;
-    box-shadow: 0 5px 10px rgba(22, 50, 60, 0.5);
     padding: 5px;
 }
 .details {
@@ -59,7 +61,6 @@
 .comment-content {
     align-self:baseline;
     width: 100%;
-    border:solid #214C5A 1px;
     padding: 10px;
     min-height: 50px;
     background: linear-gradient(90deg,
