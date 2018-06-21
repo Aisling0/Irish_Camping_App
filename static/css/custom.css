@@ -15,6 +15,7 @@
   }
 .navbar-nav li.active a,
 .navbar-nav li a:hover,
+.navbar-nav li a:focus,
 .open .dropdown-toggle,
 .dropdown-menu{
       background-color: #4197b3 !important;
