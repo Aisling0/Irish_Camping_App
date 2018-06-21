@@ -16,8 +16,8 @@
                     <th>Posts</th>
                 </tr>
             </thead>
-            {% for subject in subjects %}
-            <tr>
+
+            <tr>{% for subject in subjects %}
                 <td><h3><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h3></td>
                 <td>
                     <a>
