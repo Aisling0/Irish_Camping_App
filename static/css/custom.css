@@ -13,6 +13,8 @@
       letter-spacing: 4px;
       opacity: 0.9;
   }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
 .navbar-nav li.active a,
 .navbar-nav li a:hover,
 .navbar-nav li a:focus,
