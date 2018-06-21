@@ -40,6 +40,9 @@
     color: #214C5A;
     min-width: 250px;
 }
+.table {
+    margin-bottom:0px;
+}
 th, td {
     padding-right: 10px;
 }
