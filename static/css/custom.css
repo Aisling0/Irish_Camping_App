@@ -14,9 +14,9 @@
       opacity: 0.9;
   }
 .navbar-nav li.active a,
-  .navbar-nav li a:hover,
-  .open .dropdown-toggle,
-  dropdown-menu{
+.navbar-nav li a:hover,
+.open .dropdown-toggle,
+.dropdown-menu{
       background-color: #4197b3 !important;
   }
 .navbar-default .navbar-toggle {
