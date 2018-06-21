@@ -23,8 +23,7 @@
     border-color: transparent;
 }
 footer,
-.container-fluid,
-.dropnavBtn {
+.container-fluid{
     background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
 }
 .breadcrumbtab {

@@ -39,11 +39,11 @@
                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account<span class="caret"></span></a>
                            <ul class="dropdown-menu">
                                {% if user.is_authenticated %}
-                                   <li class="dropnavBtn"><a href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                                   <li class="dropnavBtn"><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+                                   <li><a href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                                   <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
                                {% else %}
-                                   <li class="dropnavBtn"><a href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                   <li class="dropnavBtn"><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                   <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                   <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                                {% endif %}
                            </ul>
                        </li>
