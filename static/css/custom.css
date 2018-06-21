@@ -11,11 +11,11 @@
     height: 60px;
     padding-right: 15px;
     padding-left: 15px;
-    background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
     border:none;
 }
-.navbar-nav li a:hover,
-.navbar-nav li a:focus {
+button,
+.navBtn:hover,
+.navBtn:focus {
     background: linear-gradient(
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0.1) 25%,
@@ -23,6 +23,14 @@
         rgba(255, 255, 255, 0.1) 75%,
         rgba(255, 255, 255, 0) 100%);
     border: none;
+}
+button:hover{
+    border: none;
+}
+footer,
+.container-fluid,
+.dropnavBtn {
+    background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
 }
 .breadcrumbtab {
 	color: #4197b3;
@@ -36,16 +44,6 @@
     color: #214C5A;
     min-width: 250px;
 }
-#subjectbox {
-    height: 350px;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 25%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.1) 75%,
-        rgba(255, 255, 255, 0) 100%);
-}
-
 th, td {
     padding-right: 10px;
 }
@@ -53,6 +51,4 @@ footer {
     position:relative;
     bottom:0;
 }
-.card {
-    min-height: 150px;
-}
+
