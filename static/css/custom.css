@@ -26,7 +26,8 @@
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
-.container-fluid{
+.container-fluid,
+.progress-bar{
     background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
 }
 .breadcrumbtab {
