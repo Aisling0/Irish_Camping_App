@@ -58,13 +58,6 @@
                </div>
             </div>
            {% endif %}
-
-
-            {% if user.is_authenticated %}
-               <p>
-                   <a href="{% url 'new_post' thread.id %}" class="btn btn-primary">New post</a>
-               </p>
-           {% endif %}
        </div>
    </div>
    <div class="container">
@@ -72,4 +65,9 @@
            {% include "post.html" %}
        {% endfor %}
    </div>
+    {% if user.is_authenticated %}
+        <p>
+            <a href="{% url 'new_post' thread.id %}" class="btn btn-primary">New Comment</a>
+        </p>
+    {% endif %}
 {% endblock %}
