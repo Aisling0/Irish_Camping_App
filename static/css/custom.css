@@ -6,26 +6,25 @@
 .jumbotron {
     box-shadow: 0 5px 10px rgba(22, 50, 60, 0.5);
 }
-.container-fluid {
-    width: 100%;
-    height: 60px;
-    padding-right: 15px;
-    padding-left: 15px;
-    border:none;
+.navbar {
+      margin-bottom: 0;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+.navbar-nav li.active a,
+.navbar-nav li a:hover {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 75%,
+    rgba(255, 255, 255, 0) 100%);
+border: none;
 }
-.navbar-toggle,
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 25%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.1) 75%,
-        rgba(255, 255, 255, 0) 100%) !important;
-    border: none;
-}
-.navbar-toggle:hover{
-    border: none;
+.navbar-default .navbar-toggle {
+    border-color: transparent;
 }
 footer,
 .container-fluid,
@@ -46,9 +45,5 @@ footer,
 }
 th, td {
     padding-right: 10px;
-}
-footer {
-    position:relative;
-    bottom:0;
 }
 
