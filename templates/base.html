@@ -35,18 +35,14 @@
                        <li class="navBtn"><a  href="{% url 'about' %}">About</a></li>
                        <li class="navBtn"><a  href="{% url 'forum' %}">Forum</a></li>
                        <li class="navBtn"><a  href="{% url 'contact' %}">Contact Us</a></li>
-                       <li class="dropdown">
-                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account<span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                               {% if user.is_authenticated %}
-                                   <li><a href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                                   <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
-                               {% else %}
-                                   <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                   <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                               {% endif %}
-                           </ul>
-                       </li>
+                       <li class="navBtn"><a  href="{% url 'contact' %}">Contact Us</a></li>
+                       {% if user.is_authenticated %}
+                       <li class="navBtn"><a  href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                       <li class="navBtn"><a  href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+                       {% else %}
+                       <li class="navBtn"><a  href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                       <li class="navBtn"><a  href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                       {% endif %}
                    </ul>
                </div>
            </div>
