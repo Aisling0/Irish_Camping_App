@@ -13,16 +13,22 @@
 {% endblock %}
 
 {% block content %}
-  <form role="form" method="post" id="register-form" action="{% url 'register' %}">
-    <div id="credit-card-errors" style="display:none">
-      <div class="alert-message block-message error" id="stripe-error-message"></div>
+    <div class="container">
+        <h1></h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item active">Sign Up</li>
+        </ol>
     </div>
-
-    <legend>Create a new account</legend>
-    {% csrf_token %}
-    {{ form|as_bootstrap }}
-    <div class="form-group">
-      <input class="btn btn-primary" id="validate_card_btn" name="commit" type="submit" value="Register">
-    </div>
-  </form>
+    <form role="form" method="post" id="register-form" action="{% url 'register' %}">
+        <div id="credit-card-errors" style="display:none">
+            <div class="alert-message block-message error" id="stripe-error-message"></div>
+        </div>
+        <legend>Create a new account</legend>
+        {% csrf_token %}
+        {{ form|as_bootstrap }}
+        <div class="form-group">
+            <input class="btn btn-primary" id="validate_card_btn" name="commit" type="submit" value="Register">
+        </div>
+    </form>
 {% endblock %}
