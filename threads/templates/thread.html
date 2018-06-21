@@ -10,7 +10,7 @@
                <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'forum' %}">Forum</a></li>
                <li class="breadcrumb-item active">{{ thread.name }}</li>
            </ol>
-           <div id="postBox" class="col-md-12">
+           <div id="postBox" class="">
                <h2>{{ thread.name }}</h2>
                <table class="table">
                    <tbody>
@@ -39,7 +39,7 @@
                        <h2>Poll</h2>
                        <strong>{{ thread.poll.question }}</strong><br><br>
                        {% for subject in thread.poll.subjects.all %}
-                           <div class="col-md-10">
+                           <div class="">
                                <strong>{{ subject.name }}</strong>
                                <span class="pull-right">{{ subject|vote_percentage }}%</span>
                            </div>
