@@ -5,8 +5,7 @@
         <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
         <li class="breadcrumb-item active">Forum</li>
     </ol>
-{% load bootstrap_tags %}
-      {% for subject in subjects %}
+
         <section class="col-lg-12">
             <div class="container">
                <table class="table table-bordered">
@@ -20,6 +19,8 @@
                    </thead>
                    <tbody>
                     <tr>
+                        {% load bootstrap_tags %}
+                        {% for subject in subjects %}
                         <td><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></td>
                         <td><a>
                             {% autoescape off %}
