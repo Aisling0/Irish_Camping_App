@@ -2,40 +2,38 @@
 {% load thread_extras %}
 {% block content %}
 {% load bootstrap_tags %}
-    <section class="col-lg-12">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
-                <li class="breadcrumb-item active">Forum</li>
-            </ol>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Topics</th>
-                        <th>Description</th>
-                        <th>Threads</th>
-                        <th>Posts</th>
-                    </tr>
-                </thead>
-                {% for subject in subjects %}
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item active">Forum</li>
+        </ol>
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td><h3><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h3></td>
-                    <td>
-                        <a>
-                            {% autoescape off %}
-                                {{ subject.description }}
-                            {% endautoescape %}
-                        </a>
-                    </td>
-                    <td>
-                        <p>{{ subject.threads.count }}</p>
-                    </td>
-                    <td>
-                        <p>{{ subject|get_total_subject_posts }}</p>
-                    </td>
+                    <th>Topics</th>
+                    <th>Description</th>
+                    <th>Threads</th>
+                    <th>Posts</th>
                 </tr>
-            </table>
-        </div>
-    </section>
+            </thead>
+            {% for subject in subjects %}
+            <tr>
+                <td><h3><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h3></td>
+                <td>
+                    <a>
+                        {% autoescape off %}
+                            {{ subject.description }}
+                        {% endautoescape %}
+                    </a>
+                </td>
+                <td>
+                    <p>{{ subject.threads.count }}</p>
+                </td>
+                <td>
+                    <p>{{ subject|get_total_subject_posts }}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
 {% endfor %}
 {% endblock %}
