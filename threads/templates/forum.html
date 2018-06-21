@@ -1,25 +1,43 @@
 {% extends "base.html" %}
 {% load thread_extras %}
 {% block content %}
-     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
-        <li class="breadcrumb-item active">Forum</li>
-    </ol>
 {% load bootstrap_tags %}
-      {% for subject in subjects %}
-        <section class="col-lg-12">
-            <div class="forumList">
-               <ul>
-                    <li class="forumItem"><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></li>
-                    <li class="forumItem"><a>
-                            {% autoescape off %}
-                                {{ subject.description }}
-                            {% endautoescape %}
-                        </a></li>
-                    <li class="forumItem"><p>{{ subject.threads.count }}</p></li>
-                    <li class="forumItem"><p>{{ subject|get_total_subject_posts }}</p></li>
-                </ul>
-            </div>
-        </section>
-    {% endfor %}
+    <section class="col-lg-12">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
+                <li class="breadcrumb-item active">Forum</li>
+            </ol>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Topics</th>
+                        <th>Description</th>
+                        <th>Threads</th>
+                        <th>Posts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for subject in subjects %}
+                    <tr>
+                        <td><h3><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a></h3></td>
+                        <td>
+                            <a>
+                                {% autoescape off %}
+                                    {{ subject.description }}
+                                {% endautoescape %}
+                            </a>
+                        </td>
+                        <td>
+                            <p>{{ subject.threads.count }}</p>
+                        </td>
+                        <td>
+                            <p>{{ subject|get_total_subject_posts }}</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+{% endfor %}
 {% endblock %}
