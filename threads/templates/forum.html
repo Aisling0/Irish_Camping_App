@@ -20,15 +20,13 @@
             </thead>
 
             <tr>{% for subject in subjects %}
-                <td><a href="{% url 'threads' subject.id %}">{{ subject.name }}</a>></td>
                 <td>
-                    <p>{{ subject.threads.count }}</p>
+                    <a href="{% url 'threads' subject.id %}">{{ subject.name }}</a>
                 </td>
-                <td>
-                    <p>{{ subject|get_total_subject_posts }}</p>
-                </td>
-            </tr>
+                <td>{{ subject.threads.count }}</td>
+                <td>{{ subject|get_total_subject_posts }}</td>
+            </tr>{% endfor %}
         </table>
     </div>
-{% endfor %}
+
 {% endblock %}
