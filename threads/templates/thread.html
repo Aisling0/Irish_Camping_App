@@ -10,7 +10,7 @@
                <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'forum' %}">Forum</a></li>
                <li class="breadcrumb-item active">{{ thread.name }}</li>
            </ol>
-           <div id="postBox" class="">
+           <div id="postBox" class="container">
                <h2>{{ thread.name }}</h2>
                <table class="table">
                    <tbody>
@@ -34,7 +34,7 @@
                </table>
 
             {% if thread.poll %}
-               <div class="container">
+               <div class="">
                    <div class="pollBox">
                        <h2>Poll</h2>
                        <strong>{{ thread.poll.question }}</strong><br><br>
