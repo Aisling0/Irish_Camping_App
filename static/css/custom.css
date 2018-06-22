@@ -54,12 +54,7 @@ btn:hover {
 .footericons{
     color: #ffffff;
 }
-#footContainer{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-}
+
 /* --------------------FORUM STYLE---------------------- */
 #comment-box {
     min-height: 100px;

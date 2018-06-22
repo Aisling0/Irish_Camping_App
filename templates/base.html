@@ -35,6 +35,7 @@
                        <li class="navBtn"><a  href="{% url 'about' %}">About</a></li>
                        <li class="navBtn"><a  href="{% url 'forum' %}">Forum</a></li>
                        <li class="navBtn"><a  href="{% url 'contact' %}">Contact Us</a></li>
+                       <li class="navBtn"><a  href="{% url 'contact' %}">Contact Us</a></li>
                        {% if user.is_authenticated %}
                        <li class="navBtn"><a  href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
                        <li class="navBtn"><a  href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
@@ -67,16 +68,17 @@
    <hr>
 
     </div>
-   <div id="footContainer" class="container-fluid">
+   <div class="container-fluid">
        <footer class="text-center">
-           <p id="footericons">
-               <a class="footericon" href="" target=_blank><i class="fa fa-twitter" aria-hidden="true"></i></a>
-               <a class="footericon" href="" target=_blank><i class="fa fa-facebook" aria-hidden="true"></i></a>
-               <a class="footericon" href="" target=_blank><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-               <a class="footericon" href="" target=_blank><i class="fa fa-github" aria-hidden="true"></i></a>
-           </p>
-       </footer>
+        <p id="footericons">
+            <a class="footericon" href="" target=_blank><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="footericon" href="" target=_blank><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="footericon" href="" target=_blank><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="footericon" href="" target=_blank><i class="fa fa-github" aria-hidden="true"></i></a>
+        </p>
+    </footer>
     </div>
+
 </body>
  
 </html>
