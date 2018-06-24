@@ -1,6 +1,9 @@
 .navbar-brand {
     font-size: 20px;
 }
+.container {
+    margin-top: 20px;
+}
 #comment-box,
 .container-fluid,
 .jumbotron {
