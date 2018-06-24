@@ -9,6 +9,9 @@ A camping forum site that allows users to register for a charge of €1.99 and h
 
 Live Demo [Hosted on Heroku](https://irish-camping.herokuapp.com/).
 
+***Use Stripe credit card number: 4242424242424242
+***For more Stripe test card numbers please see [here](https://stripe.com/docs/testing#cards/)
+
 ## Hosting
 
 Hosted on Heroku (Cloud based platform) 
