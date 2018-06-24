@@ -12,6 +12,7 @@
 
 {% block content %}
    <section>
+      <div></div>
        <div class="col-md-9">
            <form method="post" action="{% url 'new_thread' subject.id %}">
                {% csrf_token %}
