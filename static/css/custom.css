@@ -25,6 +25,9 @@
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
+.container {
+    margin-bottom: 200px;
+}
 footer,
 .container-fluid,
 .progress-bar{
