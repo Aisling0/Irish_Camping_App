@@ -64,11 +64,11 @@
        {% for post in thread.posts.all %}
            {% include "post.html" %}
        {% endfor %}
-   </div>
-    {% if user.is_authenticated %}
+      {% if user.is_authenticated %}
         <p>
             <a href="{% url 'new_post' thread.id %}" class="btn btn-primary">New Comment</a>
         </p>
-
     {% endif %}
+   </div>
+   
 {% endblock %}
