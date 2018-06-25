@@ -22,9 +22,8 @@ body {
       letter-spacing: 3px;
       opacity: 0.9;
   }
-.navbar-nav li a{
-    background-color: transparent !important;
-}
+
+.navbar-nav li a,
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
 .navbar-nav li.active a,
@@ -121,7 +120,7 @@ btn:hover {
 
 @media screen and (min-width: 750px) {
   .navbar-nav li a{
-	background-color: #4197b3 !important;	
+	background-color: transparent !important;	
     }
 }
 
