@@ -9,26 +9,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 8,
-    "fields": {
-        "password": "pbkdf2_sha256$36000$SHnyFGH6FDA2$Ti0GgrpL7ac+V1N89A2tnmMkg7zXhc2G57Fy9OGjxWE=",
-        "last_login": "2018-06-22T12:54:44.679Z",
-        "is_superuser": true,
-        "username": "aisling1odonovan@gmail.com",
-        "first_name": "",
-        "last_name": "",
-        "email": "aisling1odonovan@gmail.com",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2018-06-18T19:56:09.302Z",
-        "stripe_id": "",
-        "subscription_end": "2018-06-25T14:50:33.003Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "accounts.user",
     "pk": 9,
     "fields": {
         "password": "pbkdf2_sha256$30000$sLh0WHZcsvlp$l6GQuGqsYwbUwSXnLWoUtHwAqiFhPt1vDNpFV5x9j38=",
@@ -49,20 +29,20 @@
 },
 {
     "model": "accounts.user",
-    "pk": 10,
+    "pk": 12,
     "fields": {
-        "password": "pbkdf2_sha256$36000$MftD818GPbN4$NVYYkWdb6raxVIdRuVeOvO5dQtIMc5O0fzRuzciiKNA=",
+        "password": "pbkdf2_sha256$36000$1q9hx7MUw9ER$HYqidPQw4hx3rpYneiVVpXl1Bg6spQEIzv6hQ7Io5gs=",
         "last_login": null,
         "is_superuser": true,
-        "username": "aisling.odonovan@mycit.ie",
+        "username": "aisling1odonovan@gmail.com",
         "first_name": "",
         "last_name": "",
-        "email": "aisling.odonovan@mycit.ie",
+        "email": "aisling1odonovan@gmail.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2018-06-22T01:11:59.836Z",
+        "date_joined": "2018-06-25T16:00:26.904Z",
         "stripe_id": "",
-        "subscription_end": "2018-06-25T14:50:33.003Z",
+        "subscription_end": "2018-06-25T16:00:26.904Z",
         "groups": [],
         "user_permissions": []
     }
