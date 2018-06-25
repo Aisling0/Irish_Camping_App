@@ -2,34 +2,35 @@
 {% load thread_extras %}
 {% load staticfiles %}
 {% block content %}
-   <div class="row header">
-       <div class="container">
+ <section>
+    <div class="row header">
+       <div>
            <h1></h1>
            <ol class="breadcrumb">
                <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'index' %}">Home</a></li>
                <li class="breadcrumb-item"><a class="breadcrumbtab" href="{% url 'forum' %}">Forum</a></li>
                <li class="breadcrumb-item active">{{ thread.name }}</li>
            </ol>
-           <div id="postBox" class="container">
+           <div id="postBox">
                <h2>{{ thread.name }}</h2>
                <table class="table">
                    <tbody>
-                   <tr>
-                       <th>
-                           CREATED
-                       </th>
-                       <th>OWNER</th>
-                       <th>LAST POST</th>
-                   </tr>
-                   <tr>
-                       <td>
-                           <time datetime="{{ thread.created_at }}">
-                               {{ thread.created_at|started_time }}
-                           </time>
-                       </td>
-                       <td>{{ thread.user.username }}</td>
-                       <td>{% last_posted_user_name thread %}</td>
-                   </tr>
+                     <tr>
+                         <th>
+                             CREATED
+                         </th>
+                         <th>OWNER</th>
+                         <th>LAST POST</th>
+                     </tr>
+                     <tr>
+                         <td>
+                             <time datetime="{{ thread.created_at }}">
+                                 {{ thread.created_at|started_time }}
+                             </time>
+                         </td>
+                         <td>{{ thread.user.username }}</td>
+                         <td>{% last_posted_user_name thread %}</td>
+                     </tr>
                    </tbody>
                </table>
 
@@ -59,15 +60,18 @@
             </div>
            {% endif %}
        </div>
-   </div>
-   <div class="container">
+  
+   <div>
        {% for post in thread.posts.all %}
            {% include "post.html" %}
        {% endfor %}
-   </div>
-    {% if user.is_authenticated %}
+      {% if user.is_authenticated %}
         <p>
             <a href="{% url 'new_post' thread.id %}" class="btn btn-primary">New Comment</a>
         </p>
     {% endif %}
+   </div>
+</div>
+ <section>
+   
 {% endblock %}

@@ -4,6 +4,9 @@ body {
 .navbar-brand {
     font-size: 20px;
 }
+.container {
+    margin-top: 20px;
+}
 #comment-box,
 .container-fluid,
 .jumbotron {
@@ -31,9 +34,32 @@ body {
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
+.container {
+    margin-bottom: 100px;
+}
+footer,
 .container-fluid,
 .progress-bar{
     background-image: linear-gradient(#4197b3, #367d94, #2b6375, #214c5a, #16323c);
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    min-height: 50px;
+    display: block;
+    margin-top: 100px;
+}
+.footlinks {
+    line-height: 15px;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.footlink {
+    display: inline-block;
+    list-style-type: none;
 }
 .btn, btn:focus,
 btn:active,
@@ -45,9 +71,11 @@ btn:hover{
 btn:hover {
     opacity: 0.8;
 }
+.footcontent,
 .breadcrumbtab {
 	color: #4197b3;
 }
+.footcontent:hover,
 .breadcrumbtab:hover,
 .breadcrumbtab:focus{
 	color: #16323c;
