@@ -1,0 +1,46 @@
+[
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$NrGKoDxj96wb$OyAkdkpvtlgkLk4qjH8JdQVQd5Nj8RXvE/uOZuA/1YU=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "aisling1odonovan@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "aisling1odonovan@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-06-25T16:13:52.990Z",
+        "stripe_id": "",
+        "subscription_end": "2018-06-25T16:13:52.990Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "threads.subject",
+    "pk": 1,
+    "fields": {
+        "name": "test2",
+        "description": ""
+    }
+},
+{
+    "model": "threads.subject",
+    "pk": 2,
+    "fields": {
+        "name": "test2",
+        "description": ""
+    }
+}
+]
