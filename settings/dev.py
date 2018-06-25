@@ -2,7 +2,7 @@ from base import *
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
 
 INSTALLED_APPS.append('debug_toolbar')
