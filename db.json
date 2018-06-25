@@ -1,13 +1,5 @@
 [
 {
-    "model": "sessions.session",
-    "pk": "beesrqlrxo795unvavngi7jcglb2ekz2",
-    "fields": {
-        "session_data": "ZjExMzE0ZmZkNmRkMGQyNDZkZTgxOTA0MGNmNjM5NzNjODM3ZTA4MTp7Il9hdXRoX3VzZXJfaGFzaCI6ImQ0NjFiMmUxMWE0MjE1MGFiMWJhYTAxN2E1YzdiY2VhYjA3NjFlYzYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiOSJ9",
-        "expire_date": "2018-07-02T21:53:24.546Z"
-    }
-},
-{
     "model": "sites.site",
     "pk": 1,
     "fields": {
@@ -19,8 +11,8 @@
     "model": "accounts.user",
     "pk": 8,
     "fields": {
-        "password": "pbkdf2_sha256$30000$1o8mRIL9Gtkp$fonkOy4b4l+ya/qW5YbXsN/yGAFlhr+E9COhBf+PueQ=",
-        "last_login": null,
+        "password": "pbkdf2_sha256$36000$SHnyFGH6FDA2$Ti0GgrpL7ac+V1N89A2tnmMkg7zXhc2G57Fy9OGjxWE=",
+        "last_login": "2018-06-22T12:54:44.679Z",
         "is_superuser": true,
         "username": "aisling1odonovan@gmail.com",
         "first_name": "",
@@ -30,7 +22,7 @@
         "is_active": true,
         "date_joined": "2018-06-18T19:56:09.302Z",
         "stripe_id": "",
-        "subscription_end": "2018-06-18T19:56:09.303Z",
+        "subscription_end": "2018-06-25T14:50:33.003Z",
         "groups": [],
         "user_permissions": []
     }
@@ -50,7 +42,27 @@
         "is_active": true,
         "date_joined": "2018-06-18T21:53:21.954Z",
         "stripe_id": "tok_1CeVHrDYVUKSjWSAv5IeIo8i",
-        "subscription_end": "2018-06-18T21:53:21.954Z",
+        "subscription_end": "2018-06-25T14:50:33.003Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$MftD818GPbN4$NVYYkWdb6raxVIdRuVeOvO5dQtIMc5O0fzRuzciiKNA=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "aisling.odonovan@mycit.ie",
+        "first_name": "",
+        "last_name": "",
+        "email": "aisling.odonovan@mycit.ie",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-06-22T01:11:59.836Z",
+        "stripe_id": "",
+        "subscription_end": "2018-06-25T14:50:33.003Z",
         "groups": [],
         "user_permissions": []
     }
