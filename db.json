@@ -3,35 +3,15 @@
     "model": "sites.site",
     "pk": 1,
     "fields": {
-        "domain": "localhost",
-        "name": "localhost"
+        "domain": "example.com",
+        "name": "example.com"
     }
 },
 {
     "model": "accounts.user",
-    "pk": 9,
+    "pk": 13,
     "fields": {
-        "password": "pbkdf2_sha256$30000$sLh0WHZcsvlp$l6GQuGqsYwbUwSXnLWoUtHwAqiFhPt1vDNpFV5x9j38=",
-        "last_login": "2018-06-18T21:53:24.480Z",
-        "is_superuser": false,
-        "username": "eoink82@gmail.com",
-        "first_name": "",
-        "last_name": "",
-        "email": "eoink82@gmail.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2018-06-18T21:53:21.954Z",
-        "stripe_id": "tok_1CeVHrDYVUKSjWSAv5IeIo8i",
-        "subscription_end": "2018-06-25T14:50:33.003Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "accounts.user",
-    "pk": 12,
-    "fields": {
-        "password": "pbkdf2_sha256$36000$1q9hx7MUw9ER$HYqidPQw4hx3rpYneiVVpXl1Bg6spQEIzv6hQ7Io5gs=",
+        "password": "pbkdf2_sha256$36000$NrGKoDxj96wb$OyAkdkpvtlgkLk4qjH8JdQVQd5Nj8RXvE/uOZuA/1YU=",
         "last_login": null,
         "is_superuser": true,
         "username": "aisling1odonovan@gmail.com",
@@ -40,9 +20,9 @@
         "email": "aisling1odonovan@gmail.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2018-06-25T16:00:26.904Z",
+        "date_joined": "2018-06-25T16:13:52.990Z",
         "stripe_id": "",
-        "subscription_end": "2018-06-25T16:00:26.904Z",
+        "subscription_end": "2018-06-25T16:13:52.990Z",
         "groups": [],
         "user_permissions": []
     }
