@@ -21,7 +21,7 @@ body {
       font-size: 11px !important;
       letter-spacing: 3px;
       opacity: 0.9;
-  }
+  }.navbar-nav li a, 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
 .navbar-nav li.active a,
