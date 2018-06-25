@@ -21,7 +21,10 @@ body {
       font-size: 11px !important;
       letter-spacing: 3px;
       opacity: 0.9;
-  }.navbar-nav li a, 
+  }
+.navbar-nav li a{
+    background-color: transparent !important;
+}
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
 .navbar-nav li.active a,
@@ -117,5 +120,9 @@ btn:hover {
 
 /* --------------------FORUM STYLE---------------------- */
 
-
+@media screen and (min-width: 750px) {
+  .navbar-nav li a{
+	background-color: #4197b3 !important;	
+    }
+}
 
